@@ -1,66 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Perpustakaan App
+Selamat datang di Perpustakaan App, sebuah sistem informasi manajemen perpustakaan sekolah yang modern, sederhana, dan fungsional. Aplikasi ini dibangun dari awal menggunakan Laravel 10 dan Bootstrap 5, dirancang untuk memudahkan petugas perpustakaan dalam mengelola data buku, anggota, serta berbagai transaksi harian.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+✨ Fitur Utama
+Aplikasi ini dilengkapi dengan berbagai fitur komprehensif untuk memenuhi kebutuhan operasional perpustakaan sekolah.
 
-## About Laravel
+📊 Dashboard Interaktif
+Pusat informasi utama yang menampilkan ringkasan data penting secara visual:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Kartu Informasi: Total anggota, total judul buku, total eksemplar, dan jumlah peminjaman aktif.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Grafik Kunjungan: Visualisasi jumlah pengunjung perpustakaan selama 7 hari terakhir.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Diagram Kategori: Diagram lingkaran yang menampilkan 5 kategori buku paling populer.
 
-## Learning Laravel
+Peminjaman Terbaru: Daftar 5 transaksi peminjaman terakhir yang terjadi.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+📚 Manajemen Data (Master)
+Kelola Anggota: Fitur CRUD (Create, Read, Update, Delete) lengkap untuk data siswa/anggota. Dilengkapi validasi untuk memastikan NIS tidak duplikat.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Kelola Buku: Fitur CRUD lengkap untuk data koleksi buku perpustakaan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+transact Transaksi Perpustakaan
+Buku Kunjungan: Petugas dapat mencatat kehadiran anggota dengan mudah.
 
-## Laravel Sponsors
+Fitur autocomplete untuk mencari anggota berdasarkan NIS atau nama.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Pencatatan waktu masuk dan keluar secara otomatis.
 
-### Premium Partners
+Peminjaman Buku:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Memungkinkan peminjaman beberapa judul buku dalam satu transaksi.
 
-## Contributing
+Mendukung peminjaman lebih dari satu eksemplar untuk judul buku yang sama.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Pengurangan stok buku secara otomatis saat peminjaman dicatat.
 
-## Code of Conduct
+Pengembalian Buku:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Proses pengembalian dengan satu klik.
 
-## Security Vulnerabilities
+Penambahan stok buku secara otomatis saat buku dikembalikan.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Status peminjaman diperbarui secara real-time.
 
-## License
+📄 Pelaporan
+Modul laporan yang lengkap dengan fitur filter dan siap cetak untuk memudahkan analisis data.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Laporan Anggota: Daftar semua anggota dengan filter berdasarkan Kelas dan Jurusan.
+
+Laporan Buku: Daftar semua koleksi buku dengan filter berdasarkan Penulis, Penerbit, Kategori, dan Tahun Terbit.
+
+Laporan Kunjungan: Riwayat kunjungan anggota dengan filter berdasarkan rentang tanggal.
+
+Laporan Peminjaman: Riwayat transaksi peminjaman dengan filter berdasarkan rentang tanggal dan status (Belum Kembali, Sudah Kembali, Terlambat).
+
+Laporan Buku Terpopuler: Peringkat 20 judul buku yang paling sering dipinjam.
+
+Laporan Anggota Teraktif: Peringkat 10 anggota yang paling aktif, baik berdasarkan jumlah peminjaman maupun jumlah kunjungan.
+
+Laporan Inventaris Buku: Ringkasan total koleksi (judul dan eksemplar) serta daftar buku yang stoknya menipis.
+
+⚙️ Fitur Lainnya
+Sistem Otentikasi: Halaman login dan register yang aman.
+
+Manajemen Profil: Pengguna dapat memperbarui informasi pribadi (nama, email) dan mengubah kata sandi.
+
+Desain Responsif: Tampilan yang optimal di berbagai perangkat, mulai dari desktop hingga mobile.
+
+🚀 Teknologi yang Digunakan
+Backend: Laravel 10
+
+Frontend: Bootstrap 5, Vite
+
+Database: MySQL
+
+Lainnya: Chart.js untuk visualisasi data
