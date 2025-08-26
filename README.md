@@ -1,88 +1,76 @@
-Perpustakaan App
-Selamat datang di Perpustakaan App, sebuah sistem informasi manajemen perpustakaan sekolah yang modern, sederhana, dan fungsional. Aplikasi ini dibangun dari awal menggunakan Laravel 10 dan Bootstrap 5, dirancang untuk memudahkan petugas perpustakaan dalam mengelola data buku, anggota, serta berbagai transaksi harian.
+# 📚 Perpustakaan App
 
-📸 Screenshot Aplikasi
-Berikut adalah beberapa tampilan dari aplikasi Perpustakaan App:
+Selamat datang di **Perpustakaan App**!  
+Sebuah sistem informasi modern yang dirancang khusus untuk menyederhanakan pengelolaan perpustakaan sekolah.  
+Dibangun dengan **Laravel 10** dan **Bootstrap 5**, aplikasi ini adalah solusi lengkap untuk semua kebutuhan administrasi perpustakaan, mulai dari pendataan hingga pelaporan.
 
-Halaman Login
+---
 
-Dashboard Utama
+## 📸 Galeri Tampilan
+Intip beberapa fitur unggulan dari aplikasi **Perpustakaan App**:
 
-Halaman Kelola Buku
+### 🔑 Halaman Login Minimalis
+![Halaman Login](screen-capture/login.png)
 
-Halaman Laporan
+### 📊 Dashboard Penuh Informasi
+![Dashboard](screen-capture/dashboard.png)
 
-✨ Fitur Utama
-Aplikasi ini dilengkapi dengan berbagai fitur komprehensif untuk memenuhi kebutuhan operasional perpustakaan sekolah.
+### 📚 Manajemen Buku yang Rapi
+![Manajemen Buku](screen-capture/buku.png)
 
-📊 Dashboard Interaktif
-Pusat informasi utama yang menampilkan ringkasan data penting secara visual:
+### 📄 Laporan Siap Cetak
+![Laporan Peminjaman](screen-capture/laporan-peminjaman.png)
 
-Kartu Informasi: Total anggota, total judul buku, total eksemplar, dan jumlah peminjaman aktif.
+---
 
-Grafik Kunjungan: Visualisasi jumlah pengunjung perpustakaan selama 7 hari terakhir.
+## ✨ Apa Saja yang Bisa Dilakukan Aplikasi Ini?
 
-Diagram Kategori: Diagram lingkaran yang menampilkan 5 kategori buku paling populer.
+Aplikasi ini dikemas dengan fitur-fitur canggih untuk membuat manajemen perpustakaan menjadi lebih efisien dan menyenangkan.
 
-Peminjaman Terbaru: Daftar 5 transaksi peminjaman terakhir yang terjadi.
+### 📊 Dashboard Cerdas
+Lihat semua informasi penting dalam sekejap di halaman utama Anda:
 
-📚 Manajemen Data (Master)
-Kelola Anggota: Fitur CRUD (Create, Read, Update, Delete) lengkap untuk data siswa/anggota. Dilengkapi validasi untuk memastikan NIS tidak duplikat.
+- **Ringkasan Data**: Pantau total anggota, judul buku, jumlah eksemplar, dan pinjaman yang masih aktif.  
+- **Grafik Kunjungan**: Analisis tren pengunjung selama 7 hari terakhir.  
+- **Kategori Populer**: Temukan 5 kategori buku yang paling diminati siswa.  
+- **Aktivitas Terbaru**: Lihat 5 transaksi peminjaman terakhir secara real-time.  
 
-Kelola Buku: Fitur CRUD lengkap untuk data koleksi buku perpustakaan.
+### 📚 Manajemen Data Lengkap
+Kelola semua data inti perpustakaan dengan mudah:
 
-transact Transaksi Perpustakaan
-Buku Kunjungan: Petugas dapat mencatat kehadiran anggota dengan mudah.
+- **Kelola Anggota**: Tambah, edit, dan hapus data siswa dengan fitur CRUD yang lengkap. Sistem otomatis mencegah duplikasi NIS.  
+- **Kelola Buku**: Atur seluruh koleksi buku Anda, mulai dari judul baru hingga pembaruan stok.  
 
-Fitur autocomplete untuk mencari anggota berdasarkan NIS atau nama.
+### 🔄 Transaksi Harian yang Cepat
+Proses semua aktivitas harian perpustakaan tanpa hambatan:
 
-Pencatatan waktu masuk dan keluar secara otomatis.
+- **Buku Kunjungan**: Catat kehadiran siswa dengan cepat menggunakan fitur autocomplete NIS atau nama.  
+- **Peminjaman Multi-Buku**: Layani peminjaman beberapa buku (termasuk judul yang sama) dalam satu transaksi. Stok akan berkurang secara otomatis.  
+- **Pengembalian Satu Klik**: Proses pengembalian buku dengan mudah, sistem otomatis mengembalikan stok.  
 
-Peminjaman Buku:
+### 📄 Laporan Detail dan Siap Cetak
+Dapatkan wawasan mendalam dari data perpustakaan Anda:
 
-Memungkinkan peminjaman beberapa judul buku dalam satu transaksi.
+- **Laporan Data**: Lihat daftar lengkap anggota dan buku dengan filter canggih (kelas, jurusan, penulis, penerbit, dll.).  
+- **Laporan Aktivitas**: Analisis data kunjungan dan peminjaman berdasarkan rentang tanggal dan status.  
+- **Laporan Peringkat**:  
+  - 📘 **Buku Terpopuler**: Temukan 20 judul buku yang paling sering dipinjam.  
+  - 👤 **Anggota Teraktif**: Lihat 10 siswa paling rajin, baik dari segi peminjaman maupun kunjungan.  
+- **Laporan Inventaris**: Ringkasan total koleksi dan daftar buku yang stoknya perlu ditambah.  
 
-Mendukung peminjaman lebih dari satu eksemplar untuk judul buku yang sama.
+---
 
-Pengurangan stok buku secara otomatis saat peminjaman dicatat.
+## ⚙️ Fitur Pendukung Lainnya
+- 🔐 **Keamanan**: Sistem login dan register yang aman untuk petugas.  
+- 👤 **Profil Pengguna**: Setiap petugas bisa mengelola informasi akun dan mengubah kata sandi.  
+- 📱 **Desain Responsif**: Tampilan tetap optimal di komputer, tablet, maupun ponsel.  
 
-Pengembalian Buku:
+---
 
-Proses pengembalian dengan satu klik.
+## 🚀 Dibangun Dengan Teknologi Modern
+- **Backend**: Laravel 10  
+- **Frontend**: Bootstrap 5 & Vite  
+- **Database**: MySQL  
+- **Visualisasi**: Chart.js  
 
-Penambahan stok buku secara otomatis saat buku dikembalikan.
-
-Status peminjaman diperbarui secara real-time.
-
-📄 Pelaporan
-Modul laporan yang lengkap dengan fitur filter dan siap cetak untuk memudahkan analisis data.
-
-Laporan Anggota: Daftar semua anggota dengan filter berdasarkan Kelas dan Jurusan.
-
-Laporan Buku: Daftar semua koleksi buku dengan filter berdasarkan Penulis, Penerbit, Kategori, dan Tahun Terbit.
-
-Laporan Kunjungan: Riwayat kunjungan anggota dengan filter berdasarkan rentang tanggal.
-
-Laporan Peminjaman: Riwayat transaksi peminjaman dengan filter berdasarkan rentang tanggal dan status (Belum Kembali, Sudah Kembali, Terlambat).
-
-Laporan Buku Terpopuler: Peringkat 20 judul buku yang paling sering dipinjam.
-
-Laporan Anggota Teraktif: Peringkat 10 anggota yang paling aktif, baik berdasarkan jumlah peminjaman maupun jumlah kunjungan.
-
-Laporan Inventaris Buku: Ringkasan total koleksi (judul dan eksemplar) serta daftar buku yang stoknya menipis.
-
-⚙️ Fitur Lainnya
-Sistem Otentikasi: Halaman login dan register yang aman.
-
-Manajemen Profil: Pengguna dapat memperbarui informasi pribadi (nama, email) dan mengubah kata sandi.
-
-Desain Responsif: Tampilan yang optimal di berbagai perangkat, mulai dari desktop hingga mobile.
-
-🚀 Teknologi yang Digunakan
-Backend: Laravel 10
-
-Frontend: Bootstrap 5, Vite
-
-Database: MySQL
-
-Lainnya: Chart.js untuk visualisasi data
+---
