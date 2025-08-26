@@ -1,6 +1,17 @@
 Perpustakaan App
 Selamat datang di Perpustakaan App, sebuah sistem informasi manajemen perpustakaan sekolah yang modern, sederhana, dan fungsional. Aplikasi ini dibangun dari awal menggunakan Laravel 10 dan Bootstrap 5, dirancang untuk memudahkan petugas perpustakaan dalam mengelola data buku, anggota, serta berbagai transaksi harian.
 
+📸 Screenshot Aplikasi
+Berikut adalah beberapa tampilan dari aplikasi Perpustakaan App:
+
+Halaman Login
+
+Dashboard Utama
+
+Halaman Kelola Buku
+
+Halaman Laporan
+
 ✨ Fitur Utama
 Aplikasi ini dilengkapi dengan berbagai fitur komprehensif untuk memenuhi kebutuhan operasional perpustakaan sekolah.
 
