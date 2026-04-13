@@ -2,7 +2,6 @@
 
 @section('content')
 <style>
-    /* Style untuk kontainer rekomendasi */
     .autocomplete-container {
         position: relative;
     }
@@ -79,7 +78,6 @@
     <div class="card">
         <div class="card-header">Daftar Pengunjung Hari Ini</div>
         <div class="card-body">
-            {{-- ... (kode tabel tidak berubah) ... --}}
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
@@ -161,7 +159,6 @@
                 });
         });
 
-        // Sembunyikan rekomendasi jika klik di luar
         document.addEventListener('click', function(e) {
             if (e.target.id !== 'nis') {
                 nisList.innerHTML = '';
