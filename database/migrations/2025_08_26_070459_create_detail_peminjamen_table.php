@@ -15,7 +15,6 @@ return new class extends Migration
                 $table->id();
                 $table->foreignId('peminjaman_id')->constrained('peminjamans')->onDelete('cascade');
                 $table->foreignId('buku_id')->constrained()->onDelete('cascade');
-                // Kolom 'jumlah' ditambahkan langsung di sini
                 $table->integer('jumlah')->default(1);
                 $table->timestamps();
         });
