@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <!-- Baris Peminjaman Terbaru -->
+    <!-- Baris Peminjaman  -->
     <div class="row mt-4">
         <div class="col-12">
             <div class="card">
@@ -131,7 +131,7 @@
 @endsection
 
 @push('scripts')
-<!-- Memuat library Chart.js -->
+<!-- library Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
