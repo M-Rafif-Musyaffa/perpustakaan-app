@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('anggotas', function (Blueprint $table) {
             $table->id();
-            $table->string('nis')->unique(); // Nomor Induk Siswa
+            $table->string('nis')->unique();
             $table->string('nama');
-            $table->string('kelas'); // Contoh: X, XI, XII
-            $table->string('jurusan'); // Contoh: RPL, TKJ, MM
+            $table->string('kelas'); 
+            $table->string('jurusan');
             $table->string('no_telp')->nullable();
             $table->timestamps();
         });
