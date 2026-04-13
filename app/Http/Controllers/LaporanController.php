@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\DB;
 
 class LaporanController extends Controller
 {
-    // ... (fungsi-fungsi laporan lainnya tidak berubah)
     public function anggota(Request $request)
     {
         $kelasList = Anggota::select('kelas')->distinct()->orderBy('kelas')->pluck('kelas');
@@ -120,9 +119,6 @@ class LaporanController extends Controller
         return view('laporan.anggota_aktif', compact('aktifPinjam', 'aktifKunjung'));
     }
 
-    /**
-     * UBAH DISINI: Tambahkan fungsi baru untuk laporan inventaris buku
-     */
     public function inventarisBuku()
     {
         $totalJudul = Buku::count();
