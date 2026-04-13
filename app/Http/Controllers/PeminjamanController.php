@@ -5,15 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Anggota;
 use App\Models\Buku;
 use App\Models\Peminjaman;
-use Illuminate\Http\Request; // <-- Jangan lupa tambahkan ini
+use Illuminate\Http\Request; 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class PeminjamanController extends Controller
 {
-    /**
-     * UBAH DISINI: Tambahkan Request $request dan logika filter
-     */
+
     public function index(Request $request)
     {
         // Mulai query dasar
