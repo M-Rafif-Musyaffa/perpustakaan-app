@@ -10,7 +10,6 @@
         </div>
         </div>
 
-        {{-- PERUBAHAN DI SINI: Menambahkan class bg-primary dan text-white --}}
         <div class="card shadow-sm border-0 bg-primary text-white">
             <div class="card-body p-4">
                 <form method="POST" action="{{ route('login') }}">
