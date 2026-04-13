@@ -50,7 +50,6 @@
                         <tr>
                             <td>{{ ($peminjamans->currentPage() - 1) * $peminjamans->perPage() + $loop->iteration }}</td>
                             <td>
-                                <!-- UBAH DISINI: Jadikan nama sebagai pemicu modal -->
                                 <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#anggotaDetailModal"
                                    data-nis="{{ $peminjaman->anggota->nis }}"
                                    data-nama="{{ $peminjaman->anggota->nama }}"
@@ -100,13 +99,11 @@
                     </tbody>
                 </table>
             </div>
-            <!-- Memastikan filter tetap ada saat pindah halaman -->
             {!! $peminjamans->appends(request()->query())->links() !!}
         </div>
     </div>
 </div>
 
-<!-- UBAH DISINI: Tambahkan struktur Modal -->
 <div class="modal fade" id="anggotaDetailModal" tabindex="-1" aria-labelledby="anggotaDetailModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -148,22 +145,16 @@
 @endsection
 
 @push('scripts')
-<!-- UBAH DISINI: Tambahkan JavaScript untuk mengisi data modal -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var anggotaDetailModal = document.getElementById('anggotaDetailModal');
     anggotaDetailModal.addEventListener('show.bs.modal', function (event) {
-        // Tombol yang memicu modal
         var button = event.relatedTarget;
-
-        // Ekstrak info dari atribut data-*
         var nis = button.getAttribute('data-nis');
         var nama = button.getAttribute('data-nama');
         var kelas = button.getAttribute('data-kelas');
         var jurusan = button.getAttribute('data-jurusan');
         var no_telp = button.getAttribute('data-no_telp');
-
-        // Perbarui konten modal
         var modalNis = anggotaDetailModal.querySelector('#modal-nis');
         var modalNama = anggotaDetailModal.querySelector('#modal-nama');
         var modalKelas = anggotaDetailModal.querySelector('#modal-kelas');
