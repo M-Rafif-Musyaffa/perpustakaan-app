@@ -5,7 +5,6 @@
     <h1 class="h3 mb-3">Edit Data Anggota</h1>
     <div class="card">
         <div class="card-body">
-            {{-- UBAH DISINI: Ganti '$anggota->id' menjadi hanya '$anggota' --}}
             <form action="{{ route('anggota.update', $anggota) }}" method="POST">
                 @csrf
                 @method('PUT')
