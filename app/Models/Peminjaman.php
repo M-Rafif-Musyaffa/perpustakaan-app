@@ -14,7 +14,7 @@ class Peminjaman extends Model
      *
      * @var string
      */
-    protected $table = 'peminjamans'; // <-- TAMBAHKAN BARIS INI
+    protected $table = 'peminjamans';
 
     protected $fillable = ['anggota_id', 'tanggal_pinjam', 'tanggal_kembali', 'status'];
 
