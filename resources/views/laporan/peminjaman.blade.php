@@ -19,7 +19,6 @@
         </button>
     </div>
 
-    <!-- UBAH DISINI: Tambahkan Kartu Informasi -->
     <div class="card bg-light-warning text-dark mb-4 info-card">
         <div class="card-body">
             <div class="d-flex align-items-center">
