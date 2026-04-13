@@ -66,7 +66,6 @@
                                 </tr>
                             </thead>
                             <tbody id="keranjang-peminjaman">
-                                <!-- Buku yang dipilih akan muncul di sini -->
                             </tbody>
                         </table>
                     </div>
@@ -103,7 +102,6 @@
 </div>
 
 <script>
-// ... (JavaScript tidak berubah)
 document.addEventListener('DOMContentLoaded', function() {
     let keranjang = [];
     const searchAnggotaInput = document.getElementById('search_anggota');
