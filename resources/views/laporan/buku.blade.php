@@ -50,7 +50,6 @@
                         @endforeach
                     </select>
                 </div>
-                <!-- UBAH DISINI: Tambahkan filter tahun -->
                 <div class="col-md-2">
                     <label for="tahun_terbit" class="form-label">Filter Tahun</label>
                     <select class="form-select" id="tahun_terbit" name="tahun_terbit">
