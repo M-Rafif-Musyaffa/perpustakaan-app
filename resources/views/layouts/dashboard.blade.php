@@ -102,7 +102,6 @@
             <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom" style="padding-top: 1rem; padding-bottom: 1rem;">
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Tombol Pencarian Dihapus -->
                         <ul class="navbar-nav me-auto"></ul>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item dropdown">
@@ -111,7 +110,6 @@
                                     <span class="fw-bold d-none d-sm-block">{{ Auth::user()->name }}</span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2" aria-labelledby="navbarDropdown">
-                                    <!-- Link Profil Saya Diarahkan ke Route 'profile.edit' -->
                                     <a class="dropdown-item d-flex align-items-center" href="{{ route('profile.edit') }}"><i class="bi bi-person-circle me-2"></i> Profil Saya</a>
                                     <a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-gear-fill me-2"></i> Pengaturan</a>
                                     <div class="dropdown-divider"></div>
